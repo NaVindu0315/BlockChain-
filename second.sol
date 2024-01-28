@@ -20,4 +20,9 @@ pragma solidity >=0.8.2 <0.9.0;
         state = State.Active;
     }
 
+    function isActive() public view returns(bool)
+    {
+        return state == State.Active;
+    }
+
  }
