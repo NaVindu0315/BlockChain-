@@ -10,9 +10,15 @@ pragma solidity >=0.8.2 <0.9.0;
 
  contract My3Contract
  {
+    Person [] public people;
     struct Person{
         string _firstname;
         string _lastname;
-        
+
+    }
+
+    function addperson(string memory _firstname,string memory _lastname )public
+    {
+        people.push(Person(_firstname,_lastname));
     }
  }

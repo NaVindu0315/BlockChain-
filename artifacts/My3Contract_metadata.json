@@ -4,7 +4,50 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_firstname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastname",
+						"type": "string"
+					}
+				],
+				"name": "addperson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_firstname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastname",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
 			"details": "Store & retrieve value in a variable",
@@ -36,11 +79,11 @@
 	},
 	"sources": {
 		"third.sol": {
-			"keccak256": "0x585056dad5c0a3ad0c17309ef015acafd7765eb3185fa4411e636435178cd06f",
+			"keccak256": "0x7c078caf53d306fbc7638c7f3f4301a708aa231d5fb64ff01514650b8f3281a1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://efeeb4ecad000cabdf27a8fd027d29bbd8d2b2477a7ae60bf5ed9f976504251a",
-				"dweb:/ipfs/QmVvbDhC7NYsiy4jJeC3f1hV7X7NLYk3dcrFByWfiJyxws"
+				"bzz-raw://b0b22f98b1988ae38948b69621ce738f6a329a56787929a5de707853e27762c9",
+				"dweb:/ipfs/QmcB6qKyRWytkp7nZyUSg99JKPuYhABsszDoaUR7mkN3r5"
 			]
 		}
 	},
