@@ -10,9 +10,12 @@ pragma solidity >=0.8.2 <0.9.0;
 
  contract My3Contract
  {
-    Person [] public people;
-    uint256 public peoplecount;
+    //Person [] public people;
+
+    uint256 public peoplecount = 0;
+    mapping (uint=>Person) public people;
     struct Person{
+        uint _id;
         string _firstname;
         string _lastname;
 
@@ -20,8 +23,9 @@ pragma solidity >=0.8.2 <0.9.0;
 
     function addperson(string memory _firstname,string memory _lastname )public
     {
-        
-        people.push(Person(_firstname,_lastname));
         peoplecount +=1;
+        people[peoplecount] = Person(peoplecount,_firstname,_lastname);
+       // people.push(Person(_firstname,_lastname));
+        
     }
  }
