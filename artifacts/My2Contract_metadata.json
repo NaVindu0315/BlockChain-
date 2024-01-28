@@ -4,7 +4,26 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"internalType": "enum My2Contract.State",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
 			"details": "Store & retrieve value in a variable",
@@ -36,11 +55,11 @@
 	},
 	"sources": {
 		"second.sol": {
-			"keccak256": "0x383d04fb47a0800e4505936d60d790273eac987716c6075792ecd8e461fea8fe",
+			"keccak256": "0x77719e7bccb8cc46042a7920a3ea215688e317d4ebc8c71155c32640a5c0bd32",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://6a4161b382b8b41a26f0ab2f764a1111775201a790841ca910433f7c6a33cf55",
-				"dweb:/ipfs/QmSp5oWi2TPaFBsWx4zW2fSzAJwRqs1josYiMx2UJ97vbz"
+				"bzz-raw://5e36e344612315bfadbb9a3fff16fa7b5947edc829df3c674b3cc9917c93c712",
+				"dweb:/ipfs/QmRKksTFTWzKPyogKbEYPKC3mxMhASBCjoa9mPwoAmhF7p"
 			]
 		}
 	},
