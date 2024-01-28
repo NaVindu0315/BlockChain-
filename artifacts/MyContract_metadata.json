@@ -11,6 +11,19 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -21,19 +34,6 @@
 				"name": "set",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "value",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -68,11 +68,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0x823a2065a85ced25a953de10be839664f4a5e7e6e2772e0a28c7f72c395bd28f",
+			"keccak256": "0xda2c4b3cba5363842ff7e9ddfcd9c7d7377ec34cd43d2a01d758cbe91643a324",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2a75bc8874291bc79db5da615a76833e45d6013970a4ec88c132711f2f3bf752",
-				"dweb:/ipfs/QmXf8tzmPefuej9DCnYz1ZR5xSw5e5sWuuZwE1sytbkuFC"
+				"bzz-raw://4b70ea130e96842b47353843ccd05d886b7adca8beef3412ff546960c061a155",
+				"dweb:/ipfs/QmNWUqLNFdQqC1hwTfzqbWsvC1SzqbLqwDgcceUQ57tJKj"
 			]
 		}
 	},
