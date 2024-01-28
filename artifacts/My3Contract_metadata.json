@@ -46,6 +46,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "peoplecount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -79,11 +92,11 @@
 	},
 	"sources": {
 		"third.sol": {
-			"keccak256": "0x070601623801b242971338fa03955d6e9b0f2ccaa12a1d4ee946a040cc2b2446",
+			"keccak256": "0x179c62c65d86ce6b776cc1240e655390274155bfa61e9daf387cffac2adc9ed1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://65bf73fee888d8166ff2af8a288fbfcb8509bed848041e3fdfb882d23faa846c",
-				"dweb:/ipfs/Qmez9AQSXfMejg42A5d5zguLBEuhCnnN1fhtQLrMDRC73i"
+				"bzz-raw://7832fc106e6f35462e63707a7b697f31c4d20fe3433a96faf604ff0382de53d0",
+				"dweb:/ipfs/QmRZJifb6YSj7drHHjk5oEaQrsf9nLHP6SyKGRAzVvH2S9"
 			]
 		}
 	},
