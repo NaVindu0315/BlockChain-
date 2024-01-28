@@ -79,11 +79,11 @@
 	},
 	"sources": {
 		"third.sol": {
-			"keccak256": "0x7c078caf53d306fbc7638c7f3f4301a708aa231d5fb64ff01514650b8f3281a1",
+			"keccak256": "0x070601623801b242971338fa03955d6e9b0f2ccaa12a1d4ee946a040cc2b2446",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b0b22f98b1988ae38948b69621ce738f6a329a56787929a5de707853e27762c9",
-				"dweb:/ipfs/QmcB6qKyRWytkp7nZyUSg99JKPuYhABsszDoaUR7mkN3r5"
+				"bzz-raw://65bf73fee888d8166ff2af8a288fbfcb8509bed848041e3fdfb882d23faa846c",
+				"dweb:/ipfs/Qmez9AQSXfMejg42A5d5zguLBEuhCnnN1fhtQLrMDRC73i"
 			]
 		}
 	},
