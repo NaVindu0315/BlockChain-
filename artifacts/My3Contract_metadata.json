@@ -1,0 +1,48 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"third.sol": "My3Contract"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"third.sol": {
+			"keccak256": "0x585056dad5c0a3ad0c17309ef015acafd7765eb3185fa4411e636435178cd06f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://efeeb4ecad000cabdf27a8fd027d29bbd8d2b2477a7ae60bf5ed9f976504251a",
+				"dweb:/ipfs/QmVvbDhC7NYsiy4jJeC3f1hV7X7NLYk3dcrFByWfiJyxws"
+			]
+		}
+	},
+	"version": 1
+}
