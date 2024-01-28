@@ -9,7 +9,7 @@ pragma solidity >=0.8.2 <0.9.0;
  */
 
  contract MyContract{
-    string value;
+    string public value;
     
     constructor() {
       value = "Myvalue";
@@ -18,11 +18,7 @@ pragma solidity >=0.8.2 <0.9.0;
 
 
      
-   function get() public view  returns(string memory)
-   {
-      return value;
-
-   }
+ 
 
    function set(string memory _value) public 
 
