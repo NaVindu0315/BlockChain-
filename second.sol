@@ -16,4 +16,8 @@ pragma solidity >=0.8.2 <0.9.0;
         state = State.Waiting;
     }
 
+    function activate() public {
+        state = State.Active;
+    }
+
  }

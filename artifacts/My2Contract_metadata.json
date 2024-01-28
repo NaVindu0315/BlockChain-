@@ -12,6 +12,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "activate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "state",
 				"outputs": [
 					{
@@ -55,11 +62,11 @@
 	},
 	"sources": {
 		"second.sol": {
-			"keccak256": "0x77719e7bccb8cc46042a7920a3ea215688e317d4ebc8c71155c32640a5c0bd32",
+			"keccak256": "0x37ffe348f9a0998ed57169fd3c8945741a13c94e844cb1970c4f8164428b60b7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5e36e344612315bfadbb9a3fff16fa7b5947edc829df3c674b3cc9917c93c712",
-				"dweb:/ipfs/QmRKksTFTWzKPyogKbEYPKC3mxMhASBCjoa9mPwoAmhF7p"
+				"bzz-raw://22dc9a3f125f7a2c89624a4f6011c9be961d7cb84516a2e31e681b05e16155f4",
+				"dweb:/ipfs/QmSECCcSpJ8CHByKXpVc6jB5D11jKmwswvtUNtMd79V1Rb"
 			]
 		}
 	},
