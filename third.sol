@@ -23,9 +23,13 @@ pragma solidity >=0.8.2 <0.9.0;
 
     function addperson(string memory _firstname,string memory _lastname )public
     {
-        peoplecount +=1;
+        incrementcount();
         people[peoplecount] = Person(peoplecount,_firstname,_lastname);
        // people.push(Person(_firstname,_lastname));
+        
+    }
+    function incrementcount() internal {
+        peoplecount +=1;
         
     }
  }
