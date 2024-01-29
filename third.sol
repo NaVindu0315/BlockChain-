@@ -25,7 +25,8 @@ contract My3Contract is Ownable {
         string memory _firstName, string memory _lastName
         )
          public 
-         onlyOwner
+        // onlyOwner
+        onlyWhileopen
           {
         incrementCount();
         people[peopleCount] = Person(peopleCount, _firstName, _lastName);
