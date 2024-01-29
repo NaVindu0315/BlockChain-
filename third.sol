@@ -14,7 +14,7 @@ pragma solidity >=0.8.2 <0.9.0;
  {
     constructor(address _initialOwner) Ownable(_initialOwner) {
 
-        owner = msg.sender
+        owner = msg.sender;
         // Other initialization code if needed
     }
     //Person [] public people;
