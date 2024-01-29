@@ -2,57 +2,38 @@
 
 pragma solidity >=0.8.2 <0.9.0;
 
-/**
- * @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
- */
- import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol"; // Import once
 
-
- contract My3Contract is Ownable
- {
+contract My3Contract is Ownable {
+    // Constructor (no need to set owner manually as Ownable handles it)
     constructor(address _initialOwner) Ownable(_initialOwner) {
-
-        owner = msg.sender;
         // Other initialization code if needed
     }
-    //Person [] public people;
 
-    uint256 public peoplecount = 0;
-    mapping (uint=>Person) public people;
+    // Storage for people
+    uint256 public peopleCount = 0;
+    mapping(uint => Person) public people;
 
-
-    address owner;
-    
-    modifier  onlyOwner () override
-    {
-     require   ( msg.sender == owner);
-     _;
-     
-
-    }
-
-
-    struct Person{
+    struct Person {
         uint _id;
-        string _firstname;
-        string _lastname;
+        string _firstName;
+        string _lastName;
+    }
 
-    }
-    
-    
+    // Function to add a person (using default onlyOwner from Ownable)
+    function addPerson(
+        string memory _firstName, string memory _lastName
+        )
+         public 
+         onlyOwner
+          {
+        incrementCount();
+        people[peopleCount] = Person(peopleCount, _firstName, _lastName);
+           }
 
-    function addperson(string memory _firstname,string memory _lastname ) public onlyOwner 
-    {
-        incrementcount();
-        people[peoplecount] = Person(peoplecount,_firstname,_lastname);
-       // people.push(Person(_firstname,_lastname));
-        
+    // Internal function to increment people count
+    function incrementCount() internal {
+        peopleCount += 1;
     }
-    function incrementcount() internal {
-        peoplecount +=1;
-        
-    }
- }
+}
 
