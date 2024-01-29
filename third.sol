@@ -13,18 +13,35 @@ pragma solidity >=0.8.2 <0.9.0;
  contract My3Contract is Ownable
  {
     constructor(address _initialOwner) Ownable(_initialOwner) {
+
+        owner = msg.sender
         // Other initialization code if needed
     }
     //Person [] public people;
 
     uint256 public peoplecount = 0;
     mapping (uint=>Person) public people;
+
+
+    address owner;
+    
+    modifier  onlyOwner () override
+    {
+     require   ( msg.sender == owner);
+     _;
+     
+
+    }
+
+
     struct Person{
         uint _id;
         string _firstname;
         string _lastname;
 
     }
+    
+    
 
     function addperson(string memory _firstname,string memory _lastname ) public onlyOwner 
     {
